@@ -93,7 +93,7 @@ export default function ContactCTA() {
               <div className="overflow-hidden">
                 <motion.h2
                   className="
-                    font-display font-semibold leading-[0.95]
+                    font-display font-semibold leading-[1.05]
                     text-[8vw] sm:text-[6vw] lg:text-[4.5vw]
                     tracking-[-0.02em] text-text
                     max-w-[16ch]

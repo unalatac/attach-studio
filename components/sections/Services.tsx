@@ -11,7 +11,7 @@ const services = [
   {
     number: "01",
     name: "Sosyal Medya Yönetimi",
-    description: "Her platformda strateji odaklı büyüme sistemleri.",
+    description: "Markanızı büyüten içerik ve yayın stratejileri.",
   },
   {
     number: "02",
@@ -21,22 +21,22 @@ const services = [
   {
     number: "03",
     name: "Video Prodüksiyon",
-    description: "Konseptten kurguya sinematik hikaye anlatımı.",
+    description: "Konseptten kurguya profesyonel hikaye anlatımı.",
   },
   {
     number: "04",
     name: "Reklam Filmi",
-    description: "Dikkat çekmek için tasarlanmış yayın kalitesinde reklamlar.",
+    description: "Dikkat çeken, dönüşüm odaklı reklam içerikleri.",
   },
   {
     number: "05",
     name: "Marka Kimliği",
-    description: "Tanımlayan ve kalıcı olan kimlik sistemleri.",
+    description: "Akılda kalan ve güven oluşturan marka sistemleri.",
   },
   {
     number: "06",
     name: "Dijital Pazarlama",
-    description: "Her kanalda performans odaklı kampanyalar.",
+    description: "Performans odaklı kampanyalar ve sürdürülebilir büyüme.",
   },
 ] as const;
 

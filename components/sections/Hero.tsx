@@ -118,7 +118,7 @@ export default function Hero() {
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.4, ease: EASE_CINEMATIC }}
         >
-          Dijitalin Ötesinde Bir Ajans
+          Strateji • İçerik • Prodüksiyon
         </motion.p>
 
         {/* Headline — each word clipped and revealed */}
@@ -135,7 +135,7 @@ export default function Hero() {
                 <motion.span
                   variants={wordVariants}
                   className="
-                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
+                    block font-display font-semibold leading-[1.05] sm:leading-[1.1]
                     text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
                     tracking-[-0.02em] text-text
                   "
@@ -153,7 +153,7 @@ export default function Hero() {
                 <motion.span
                   variants={wordVariants}
                   className="
-                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
+                    block font-display font-semibold leading-[1.05] sm:leading-[1.1]
                     text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
                     tracking-[-0.02em] text-text
                   "
@@ -171,7 +171,7 @@ export default function Hero() {
                 <motion.span
                   variants={wordVariants}
                   className={`
-                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
+                    block font-display font-semibold leading-[1.05] sm:leading-[1.1]
                     text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
                     tracking-[-0.02em]
                     ${i === line3.length - 1 ? "text-accent" : "text-text"}
@@ -194,7 +194,7 @@ export default function Hero() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 1.1, ease: EASE_CINEMATIC }}
           >
-            Sosyal medya yönetimi, yapay zeka destekli içerik üretimi ve kreatif prodüksiyon çözümleriyle markaların dijital dünyada daha güçlü görünmesine yardımcı oluyoruz.
+            Restoranlar, markalar ve işletmeler için sosyal medya yönetimi, video prodüksiyon, yapay zeka destekli içerik üretimi ve dijital büyüme stratejileri geliştiriyoruz.
           </motion.p>
 
           {/* CTAs */}

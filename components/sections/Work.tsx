@@ -218,7 +218,7 @@ export default function Work() {
           <p className="label text-text-muted mb-1">Seçili Çalışmalar</p>
           <h2
             className="
-              font-display font-semibold tracking-[-0.02em] leading-[0.95] text-text
+              font-display font-semibold tracking-[-0.02em] leading-[1.05] text-text
               text-[6vw] sm:text-[4.5vw] lg:text-[2.8vw]
             "
           >

@@ -68,7 +68,7 @@ export default function WhyAttach() {
           <div className="overflow-hidden">
             <motion.h2
               className="
-                font-display font-semibold tracking-[-0.02em] leading-[0.95] text-text
+                font-display font-semibold tracking-[-0.02em] leading-[1.05] text-text
                 text-[8vw] sm:text-[5.5vw] md:text-[4vw] lg:text-[2.8vw]
               "
               initial={{ y: "105%", opacity: 0 }}

@@ -47,7 +47,7 @@ export default function TrustedBy() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: EASE_CINEMATIC }}
         >
-          Bize Güvenenler
+          Birlikte Çalıştığımız Markalar
         </motion.p>
 
         <motion.p
