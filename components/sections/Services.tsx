@@ -201,8 +201,8 @@ export default function Services() {
           {/* Overflow clip for headline reveal */}
           <div className="overflow-hidden">
             <motion.h2
-              className="font-display font-semibold tracking-[-0.02em] leading-[0.92] text-text
-                text-[10vw] sm:text-[7vw] md:text-[5.5vw] lg:text-[4vw]"
+              className="font-display font-semibold tracking-[-0.02em] leading-[1.05] text-text
+                text-[8.5vw] sm:text-[6vw] md:text-[4.5vw] lg:text-[3.2vw]"
               initial={{ y: "105%", opacity: 0 }}
               animate={inView ? { y: "0%", opacity: 1 } : {}}
               transition={{ duration: 0.9, delay: 0.1, ease: EASE_CINEMATIC }}

@@ -128,11 +128,11 @@ export default function ContactCTA() {
                 +90 542 854 4838
               </a>
               <a
-                href="mailto:hello@attachstudio.com"
+                href="mailto:hello@studioattach.com"
                 data-cursor-hover
                 className="accent-underline font-body text-sm text-text-muted hover:text-text transition-colors duration-300"
               >
-                hello@attachstudio.com
+                hello@studioattach.com
               </a>
               <a
                 href="https://www.instagram.com/studioattach"
