@@ -34,23 +34,61 @@ const syne = Syne({
    METADATA
 ───────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "Attach Studio — We Attach Value. We Create Impact.",
+  metadataBase: new URL("https://studioattach.com"),
+  title: "Attach Studio | Kıbrıs Sosyal Medya ve Kreatif Ajans",
   description:
-    "A premium creative media agency delivering social media management, AI-powered content, video production, commercials, branding, and digital marketing.",
+    "Kıbrıs'ta sosyal medya yönetimi, video prodüksiyon, yapay zeka destekli içerik üretimi ve dijital pazarlama hizmetleri sunuyoruz.",
   keywords: [
-    "creative agency",
-    "social media management",
-    "video production",
-    "branding",
-    "digital marketing",
-    "AI content",
-    "Attach Studio",
+    "Kıbrıs sosyal medya ajansı",
+    "Lefkoşa reklam ajansı",
+    "KKTC reklam ajansı",
+    "Kıbrıs video prodüksiyon",
+    "Kıbrıs içerik üretimi",
+    "Kıbrıs dijital pazarlama",
+    "KKTC sosyal medya yönetimi",
   ],
   openGraph: {
-    title: "Attach Studio",
-    description: "Attach Value. Create Impact.",
+    title: "Attach Studio | Kıbrıs Sosyal Medya ve Kreatif Ajans",
+    description:
+      "Kıbrıs'ta sosyal medya yönetimi, video prodüksiyon, yapay zeka destekli içerik üretimi ve dijital pazarlama hizmetleri sunuyoruz.",
+    url: "https://studioattach.com",
+    siteName: "Attach Studio",
     type: "website",
+    locale: "tr_TR",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Attach Studio | Kıbrıs Sosyal Medya ve Kreatif Ajans",
+    description:
+      "Kıbrıs'ta sosyal medya yönetimi, video prodüksiyon, yapay zeka destekli içerik üretimi ve dijital pazarlama hizmetleri sunuyoruz.",
+  },
+};
+
+/* ─────────────────────────────────────────────────────────────
+   SCHEMA.ORG — Organization structured data
+───────────────────────────────────────────────────────────── */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Attach Studio",
+  url: "https://studioattach.com",
+  logo: "https://studioattach.com/icon.png",
+  description:
+    "Kıbrıs'ta sosyal medya yönetimi, video prodüksiyon, yapay zeka destekli içerik üretimi ve dijital pazarlama hizmetleri sunuyoruz.",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "CY",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+905428544838",
+    contactType: "customer service",
+    email: "hello@studioattach.com",
+  },
+  sameAs: [
+    "https://www.instagram.com/studioattach",
+    "https://linkedin.com/company/studioattach/",
+  ],
 };
 
 /* ─────────────────────────────────────────────────────────────
@@ -82,6 +120,10 @@ export default function RootLayout({
 
         {children}
         <GoogleAnalytics gaId="G-96WCDLVXC9" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
