@@ -59,8 +59,8 @@ export default function Hero() {
   };
 
   /* Headline words — each rendered in an overflow:hidden clip */
-  const line1 = ["Attach", "Value."];
-  const line2 = ["Create", "Impact."];
+  const line1 = ["Markanıza", "Değer", "Katarız."];
+  const line2 = ["Etki", "Yaratırız."];
 
   return (
     <section
@@ -117,7 +117,7 @@ export default function Hero() {
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.4, ease: EASE_CINEMATIC }}
         >
-          Creative Media Agency
+          Yaratıcı Medya Ajansı
         </motion.p>
 
         {/* Headline — each word clipped and revealed */}
@@ -175,8 +175,7 @@ export default function Hero() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 1.1, ease: EASE_CINEMATIC }}
           >
-            A creative media agency helping brands grow through production,
-            social media, and AI-powered content.
+            Strateji, içerik üretimi ve prodüksiyonla markaların büyümesine yardımcı oluyoruz.
           </motion.p>
 
           {/* CTAs */}
@@ -209,7 +208,7 @@ export default function Hero() {
               >
                 ▶
               </span>
-              Watch Showreel
+              Showreel İzle
             </button>
 
             {/* Secondary CTA — Our Work */}
@@ -226,7 +225,7 @@ export default function Hero() {
               "
               aria-label="View our work"
             >
-              Our Work →
+              İşlerimiz →
             </button>
           </motion.div>
         </div>
@@ -240,7 +239,7 @@ export default function Hero() {
           aria-hidden="true"
         >
           <div className="h-px w-8 bg-border" />
-          <span className="label text-border">Scroll</span>
+          <span className="label text-border">Kaydır</span>
           <motion.div
             className="h-4 w-px bg-text-muted origin-top"
             animate={{ scaleY: [1, 0, 1] }}

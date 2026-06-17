@@ -8,11 +8,11 @@ import { EASE_CINEMATIC } from "@/lib/animation";
    PRINCIPLES DATA
 ───────────────────────────────────────────────────────────── */
 const principles = [
-  { number: "01", line1: "Strategy",  line2: "First"       },
-  { number: "02", line1: "Premium",   line2: "Production"  },
-  { number: "03", line1: "AI",        line2: "Enhanced"    },
-  { number: "04", line1: "Fast",      line2: "Execution"   },
-  { number: "05", line1: "Built For", line2: "Growth"      },
+  { number: "01", line1: "Strateji",  line2: "Önce"        },
+  { number: "02", line1: "Premium",   line2: "Prodüksiyon" },
+  { number: "03", line1: "AI",        line2: "Destekli"    },
+  { number: "04", line1: "Hızlı",     line2: "Teslimat"    },
+  { number: "05", line1: "Büyüme",    line2: "Odaklı"      },
 ] as const;
 
 /* ─────────────────────────────────────────────────────────────
@@ -62,7 +62,7 @@ export default function WhyAttach() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: EASE_CINEMATIC }}
         >
-          Why Attach
+          Neden Attach
         </motion.p>
 
         <motion.p
@@ -71,7 +71,7 @@ export default function WhyAttach() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.1, ease: EASE_CINEMATIC }}
         >
-          Five principles that define how we work.
+          Çalışma biçimimizi belirleyen beş ilke.
         </motion.p>
       </div>
 

@@ -86,7 +86,7 @@ export default function ContactCTA() {
           <div className="flex flex-col justify-between gap-12">
             <div>
               <motion.p className="label mb-6 text-text-muted" {...fadeUp(0.1)}>
-                Let&apos;s Build Something
+                Birlikte Çalışalım
               </motion.p>
 
               {/* Big question */}
@@ -102,8 +102,8 @@ export default function ContactCTA() {
                   animate={inView ? { y: "0%", opacity: 1 } : {}}
                   transition={{ duration: 1, delay: 0.2, ease: EASE_CINEMATIC }}
                 >
-                  Ready to create{" "}
-                  <span className="text-accent">impact?</span>
+                  Markanız için fark yaratan işler üretmeye{" "}
+                  <span className="text-accent">hazır mısınız?</span>
                 </motion.h2>
               </div>
             </div>
@@ -153,9 +153,9 @@ export default function ContactCTA() {
             {status === "sent" ? (
               /* Success state */
               <div className="flex h-full min-h-[320px] flex-col items-start justify-center gap-4">
-                <span className="label text-accent">Message sent</span>
+                <span className="label text-accent">Mesajınız alındı</span>
                 <p className="font-body text-xl text-text leading-relaxed">
-                  We&apos;ll be in touch shortly.
+                  En kısa sürede sizinle iletişime geçeceğiz.
                 </p>
                 <button
                   onClick={() => {
@@ -165,7 +165,7 @@ export default function ContactCTA() {
                   className="label text-text-muted hover:text-text transition-colors duration-200 mt-4"
                   data-cursor-hover
                 >
-                  Send another →
+                  Tekrar gönder →
                 </button>
               </div>
             ) : (
@@ -180,10 +180,10 @@ export default function ContactCTA() {
                     required
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="Adınız"
                     data-cursor-hover
                     className="w-full bg-transparent font-body text-base text-text placeholder:text-text-muted/50 focus:outline-none"
-                    aria-label="Your name"
+                    aria-label="Adınız"
                   />
                 </div>
 
@@ -196,10 +196,10 @@ export default function ContactCTA() {
                     required
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="Email address"
+                    placeholder="E-posta adresiniz"
                     data-cursor-hover
                     className="w-full bg-transparent font-body text-base text-text placeholder:text-text-muted/50 focus:outline-none"
-                    aria-label="Email address"
+                    aria-label="E-posta adresiniz"
                   />
                 </div>
 
@@ -212,10 +212,10 @@ export default function ContactCTA() {
                     rows={4}
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your project..."
+                    placeholder="Projenizi anlatın..."
                     data-cursor-hover
                     className="w-full resize-none bg-transparent font-body text-base text-text placeholder:text-text-muted/50 focus:outline-none"
-                    aria-label="Project description"
+                    aria-label="Proje açıklaması"
                   />
                 </div>
 
@@ -235,13 +235,13 @@ export default function ContactCTA() {
                       disabled:opacity-50 disabled:cursor-not-allowed
                     "
                   >
-                    {status === "sending" ? "Sending…" : "Send It →"}
+                    {status === "sending" ? "Gönderiliyor…" : "Gönder →"}
                   </button>
                 </div>
 
                 {status === "error" && (
                   <p className="mt-4 font-body text-xs text-red-400">
-                    Something went wrong. Please try again or email us directly.
+                    Bir hata oluştu. Lütfen tekrar deneyin veya bize direkt e-posta gönderin.
                   </p>
                 )}
               </form>

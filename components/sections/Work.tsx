@@ -10,7 +10,7 @@ import { EASE_CINEMATIC } from "@/lib/animation";
 const projects = [
   {
     index: "01",
-    category: "Restaurant",
+    category: "Restoran",
     title: "Katsu\nExpress",
     year: "2024",
     placeholderFrom: "#100C07",
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     index: "02",
-    category: "Supermarket",
+    category: "Süpermarket",
     title: "Dima Discount\nMarket",
     year: "2024",
     placeholderFrom: "#060D0C",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     index: "04",
-    category: "Music & Entertainment",
+    category: "Müzik & Eğlence",
     title: "Deniz\nGül",
     year: "2025",
     placeholderFrom: "#0E0806",
@@ -175,7 +175,7 @@ function ProjectTile({ project }: { project: Project }) {
         "
         aria-hidden="true"
       >
-        View Project ↗
+        Projeyi Gör ↗
       </div>
     </motion.article>
   );
@@ -215,14 +215,14 @@ export default function Work() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: EASE_CINEMATIC }}
         >
-          <p className="label text-text-muted mb-1">Selected Work</p>
+          <p className="label text-text-muted mb-1">Seçili Çalışmalar</p>
           <h2
             className="
               font-display font-semibold tracking-[-0.02em] leading-none text-text
               text-[5.5vw] sm:text-[4vw] lg:text-[2.2vw]
             "
           >
-            Work that earns <span className="text-accent">attention.</span>
+            Dikkat çeken <span className="text-accent">işler.</span>
           </h2>
         </motion.div>
 
@@ -232,7 +232,7 @@ export default function Work() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.7, delay: 0.2, ease: EASE_CINEMATIC }}
         >
-          04 Projects
+          04 Proje
         </motion.span>
       </div>
 

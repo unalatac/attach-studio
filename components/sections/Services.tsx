@@ -10,33 +10,33 @@ import { EASE_CINEMATIC } from "@/lib/animation";
 const services = [
   {
     number: "01",
-    name: "Social Media Management",
-    description: "Strategy-led growth systems across every platform.",
+    name: "Sosyal Medya Yönetimi",
+    description: "Her platformda strateji odaklı büyüme sistemleri.",
   },
   {
     number: "02",
-    name: "AI-Powered Content",
-    description: "Machine-speed ideation. Human-quality output.",
+    name: "AI Destekli İçerik",
+    description: "Makine hızında fikir. İnsan kalitesinde çıktı.",
   },
   {
     number: "03",
-    name: "Video Production",
-    description: "Cinematic storytelling from concept to final cut.",
+    name: "Video Prodüksiyon",
+    description: "Konseptten kurguya sinematik hikaye anlatımı.",
   },
   {
     number: "04",
-    name: "Commercials",
-    description: "Broadcast-grade ads built to earn attention.",
+    name: "Reklam Filmi",
+    description: "Dikkat çekmek için tasarlanmış yayın kalitesinde reklamlar.",
   },
   {
     number: "05",
-    name: "Branding",
-    description: "Identity systems that define and endure.",
+    name: "Marka Kimliği",
+    description: "Tanımlayan ve kalıcı olan kimlik sistemleri.",
   },
   {
     number: "06",
-    name: "Digital Marketing",
-    description: "Performance-driven campaigns across every channel.",
+    name: "Dijital Pazarlama",
+    description: "Her kanalda performans odaklı kampanyalar.",
   },
 ] as const;
 
@@ -195,7 +195,7 @@ export default function Services() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: EASE_CINEMATIC }}
           >
-            What We Do
+            Hizmetlerimiz
           </motion.p>
 
           {/* Overflow clip for headline reveal */}
@@ -207,8 +207,8 @@ export default function Services() {
               animate={inView ? { y: "0%", opacity: 1 } : {}}
               transition={{ duration: 0.9, delay: 0.1, ease: EASE_CINEMATIC }}
             >
-              Full-service,<br />
-              <span className="text-accent">no compromises.</span>
+              Eksiksiz hizmet,<br />
+              <span className="text-accent">sıfır taviz.</span>
             </motion.h2>
           </div>
         </div>
@@ -220,8 +220,8 @@ export default function Services() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.25, ease: EASE_CINEMATIC }}
         >
-          Six disciplines. One team. Every deliverable
-          held to the same uncompromising standard.
+          Altı disiplin. Tek ekip. Her çalışmada
+          aynı yüksek standart.
         </motion.p>
       </div>
 

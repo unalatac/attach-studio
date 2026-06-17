@@ -82,7 +82,7 @@ export default function Navigation() {
             aria-hidden="true"
           />
           <span className="relative z-10 group-hover:text-canvas transition-colors duration-300">
-            Get in Touch
+            Teklif Al
           </span>
         </button>
       </motion.div>

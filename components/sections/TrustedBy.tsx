@@ -47,7 +47,7 @@ export default function TrustedBy() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: EASE_CINEMATIC }}
         >
-          Trusted By
+          Bize Güvenenler
         </motion.p>
 
         <motion.p
@@ -56,7 +56,7 @@ export default function TrustedBy() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.1, ease: EASE_CINEMATIC }}
         >
-          Brands, hospitality groups and artists who trust Attach Studio.
+          Attach Studio&apos;ya güvenen markalar, ağırlama grupları ve sanatçılar.
         </motion.p>
       </div>
 

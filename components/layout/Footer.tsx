@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-canvas px-6 py-6 md:px-10 lg:px-16">
       <div className="mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="label text-text-muted">
-          © {year} Attach Studio. All rights reserved.
+          © {year} Attach Studio. Tüm hakları saklıdır.
         </p>
 
         <nav aria-label="Social links" className="flex items-center gap-6">
