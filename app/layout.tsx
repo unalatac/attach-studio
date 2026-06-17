@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Syne } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
 import GrainOverlay from "@/components/ui/GrainOverlay";
@@ -64,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="tr"
       className={`
         ${spaceGrotesk.variable}
         ${inter.variable}
@@ -80,6 +81,7 @@ export default function RootLayout({
         <GrainOverlay />
 
         {children}
+        <GoogleAnalytics gaId="G-96WCDLVXC9" />
       </body>
     </html>
   );
