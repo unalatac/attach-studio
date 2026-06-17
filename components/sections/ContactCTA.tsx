@@ -89,23 +89,30 @@ export default function ContactCTA() {
                 Birlikte Çalışalım
               </motion.p>
 
-              {/* Big question */}
+              {/* Big headline */}
               <div className="overflow-hidden">
                 <motion.h2
                   className="
                     font-display font-semibold leading-[0.95]
                     text-[8vw] sm:text-[6vw] lg:text-[4.5vw]
                     tracking-[-0.02em] text-text
-                    max-w-[14ch]
+                    max-w-[16ch]
                   "
                   initial={{ y: "100%", opacity: 0 }}
                   animate={inView ? { y: "0%", opacity: 1 } : {}}
                   transition={{ duration: 1, delay: 0.2, ease: EASE_CINEMATIC }}
                 >
-                  Markanız için fark yaratan işler üretmeye{" "}
-                  <span className="text-accent">hazır mısınız?</span>
+                  Bir Sonraki Başarı Hikayesi{" "}
+                  <span className="text-accent">Sizin Markanız Olabilir.</span>
                 </motion.h2>
               </div>
+
+              <motion.p
+                className="mt-6 font-body text-sm text-text-muted max-w-[38ch] leading-relaxed"
+                {...fadeUp(0.4)}
+              >
+                Yeni bir proje, yeni bir marka hikayesi veya mevcut çalışmalarınızı büyütmek için bizimle iletişime geçin.
+              </motion.p>
             </div>
 
             {/* Direct contacts */}

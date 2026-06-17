@@ -207,8 +207,8 @@ export default function Services() {
               animate={inView ? { y: "0%", opacity: 1 } : {}}
               transition={{ duration: 0.9, delay: 0.1, ease: EASE_CINEMATIC }}
             >
-              Eksiksiz hizmet,<br />
-              <span className="text-accent">sıfır taviz.</span>
+              İhtiyacınız Olan Her Şey,<br />
+              <span className="text-accent">Tek Çatı Altında.</span>
             </motion.h2>
           </div>
         </div>
@@ -220,8 +220,7 @@ export default function Services() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.25, ease: EASE_CINEMATIC }}
         >
-          Altı disiplin. Tek ekip. Her çalışmada
-          aynı yüksek standart.
+          Stratejiden üretime, içerikten performansa kadar markanızın dijital büyümesi için gereken tüm süreçleri yönetiyoruz.
         </motion.p>
       </div>
 

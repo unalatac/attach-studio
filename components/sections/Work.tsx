@@ -209,7 +209,7 @@ export default function Work() {
       aria-label="Selected Work"
     >
       {/* ── COMPACT HEADER ──────────────────────────────────── */}
-      <div className="mb-8 flex items-end justify-between">
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -218,16 +218,25 @@ export default function Work() {
           <p className="label text-text-muted mb-1">Seçili Çalışmalar</p>
           <h2
             className="
-              font-display font-semibold tracking-[-0.02em] leading-none text-text
-              text-[5.5vw] sm:text-[4vw] lg:text-[2.2vw]
+              font-display font-semibold tracking-[-0.02em] leading-[0.95] text-text
+              text-[6vw] sm:text-[4.5vw] lg:text-[2.8vw]
             "
           >
-            Dikkat çeken <span className="text-accent">işler.</span>
+            Ürettiğimiz İşler,<br />
+            <span className="text-accent">Anlattığımızdan Daha Fazlasını Söylüyor.</span>
           </h2>
+          <motion.p
+            className="mt-3 font-body text-sm text-text-muted max-w-[46ch] leading-relaxed"
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.7, delay: 0.15, ease: EASE_CINEMATIC }}
+          >
+            Farklı sektörlerden markalar için geliştirdiğimiz projeler, yaklaşımımızı ve üretim kalitemizi yansıtıyor.
+          </motion.p>
         </motion.div>
 
         <motion.span
-          className="label text-text-muted hidden sm:block"
+          className="label text-text-muted hidden sm:block shrink-0"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.7, delay: 0.2, ease: EASE_CINEMATIC }}

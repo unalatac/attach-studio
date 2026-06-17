@@ -59,8 +59,9 @@ export default function Hero() {
   };
 
   /* Headline words — each rendered in an overflow:hidden clip */
-  const line1 = ["Markanıza", "Değer", "Katarız."];
-  const line2 = ["Etki", "Yaratırız."];
+  const line1 = ["Markanızı"];
+  const line2 = ["Bir", "Sonraki", "Seviyeye"];
+  const line3 = ["Taşımaya", "Hazır", "Mısınız?"];
 
   return (
     <section
@@ -117,7 +118,7 @@ export default function Hero() {
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.4, ease: EASE_CINEMATIC }}
         >
-          Yaratıcı Medya Ajansı
+          Dijitalin Ötesinde Bir Ajans
         </motion.p>
 
         {/* Headline — each word clipped and revealed */}
@@ -134,7 +135,7 @@ export default function Hero() {
                 <motion.span
                   variants={wordVariants}
                   className="
-                    block font-display font-semibold leading-[0.92]
+                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
                     text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
                     tracking-[-0.02em] text-text
                   "
@@ -145,17 +146,35 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Line 2 — "Impact." highlighted in lime */}
+          {/* Line 2 */}
           <div className="flex flex-wrap gap-x-[0.25em] overflow-hidden">
-            {line2.map((word, i) => (
+            {line2.map((word) => (
+              <div key={word} className="overflow-hidden">
+                <motion.span
+                  variants={wordVariants}
+                  className="
+                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
+                    text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
+                    tracking-[-0.02em] text-text
+                  "
+                >
+                  {word}
+                </motion.span>
+              </div>
+            ))}
+          </div>
+
+          {/* Line 3 — last word in lime */}
+          <div className="flex flex-wrap gap-x-[0.25em] overflow-hidden">
+            {line3.map((word, i) => (
               <div key={word} className="overflow-hidden">
                 <motion.span
                   variants={wordVariants}
                   className={`
-                    block font-display font-semibold leading-[0.92]
+                    block font-display font-semibold leading-[1.05] sm:leading-[0.92]
                     text-[13vw] sm:text-[10vw] lg:text-[8.5vw] xl:text-[7.5vw]
                     tracking-[-0.02em]
-                    ${i === 1 ? "text-accent" : "text-text"}
+                    ${i === line3.length - 1 ? "text-accent" : "text-text"}
                   `}
                 >
                   {word}
@@ -175,7 +194,7 @@ export default function Hero() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 1.1, ease: EASE_CINEMATIC }}
           >
-            Strateji, içerik üretimi ve prodüksiyonla markaların büyümesine yardımcı oluyoruz.
+            Sosyal medya yönetimi, yapay zeka destekli içerik üretimi ve kreatif prodüksiyon çözümleriyle markaların dijital dünyada daha güçlü görünmesine yardımcı oluyoruz.
           </motion.p>
 
           {/* CTAs */}
@@ -208,7 +227,7 @@ export default function Hero() {
               >
                 ▶
               </span>
-              Showreel İzle
+              Projeni Konuşalım
             </button>
 
             {/* Secondary CTA — Our Work */}
@@ -225,7 +244,7 @@ export default function Hero() {
               "
               aria-label="View our work"
             >
-              İşlerimiz →
+              İşlerimizi İncele →
             </button>
           </motion.div>
         </div>

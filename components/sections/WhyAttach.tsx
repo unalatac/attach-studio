@@ -55,23 +55,39 @@ export default function WhyAttach() {
       aria-label="Why Attach"
     >
       {/* ── HEADER ROW ──────────────────────────────────────── */}
-      <div className="mb-10 flex items-baseline justify-between gap-8 md:mb-12">
-        <motion.p
-          className="label text-text-muted"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, ease: EASE_CINEMATIC }}
-        >
-          Neden Attach
-        </motion.p>
+      <div className="mb-10 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between">
+        <div>
+          <motion.p
+            className="label mb-4 text-text-muted"
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.6, ease: EASE_CINEMATIC }}
+          >
+            Neden Attach
+          </motion.p>
+          <div className="overflow-hidden">
+            <motion.h2
+              className="
+                font-display font-semibold tracking-[-0.02em] leading-[0.95] text-text
+                text-[8vw] sm:text-[5.5vw] md:text-[4vw] lg:text-[2.8vw]
+              "
+              initial={{ y: "105%", opacity: 0 }}
+              animate={inView ? { y: "0%", opacity: 1 } : {}}
+              transition={{ duration: 0.9, delay: 0.1, ease: EASE_CINEMATIC }}
+            >
+              Sadece İçerik Üretmiyoruz,<br />
+              <span className="text-accent">Markalara Etki Kazandırıyoruz.</span>
+            </motion.h2>
+          </div>
+        </div>
 
         <motion.p
-          className="hidden font-body text-xs text-text-muted sm:block"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.1, ease: EASE_CINEMATIC }}
+          className="font-body text-sm text-text-muted max-w-[38ch] leading-relaxed md:text-right md:shrink-0"
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.25, ease: EASE_CINEMATIC }}
         >
-          Çalışma biçimimizi belirleyen beş ilke.
+          Her içerik bir amaca hizmet etmeli. Biz tasarımı, stratejiyi ve teknolojiyi bir araya getirerek markalar için gerçek sonuçlar üreten çalışmalar geliştiriyoruz.
         </motion.p>
       </div>
 
